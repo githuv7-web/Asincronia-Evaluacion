@@ -1,4 +1,3 @@
-export function  hola (){
- console.log("aaaa")
-}
-
+export const Punto1 = async () => {
+    console.log("Iniciando petición del Punto 1...");
+};
