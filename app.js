@@ -1,6 +1,6 @@
 //Importe el modulo readline de Node.js con soporte para promesas
 import * as readline from 'readline/promises';
-// CORRECCIÓN: stdin y stdout deben venir de 'process'
+
 import { stdin as input, stdout as output } from 'process'; 
 
 //Aca estoy importando todas las funciones desde el archivo barril
@@ -30,12 +30,12 @@ while(!salir){
         case '1':
             
             console.log("\n--- Ejecutando Punto 1 ---");
-            // await Punto1()
+             await Punto1() 
             break;
 
         case '2':
             console.log("\n--- Ejecutando Punto 2 ---");
-            // await Punto2();
+            await Punto2(rl);
             break;
 
         case '3':
