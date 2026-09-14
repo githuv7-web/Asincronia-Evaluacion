@@ -40,7 +40,7 @@ while(!salir){
 
         case '3':
             console.log("\n--- Ejecutando Punto 3 ---");
-            // await Punto3();
+            await Punto3(rl);
             break;
 
         case '4':
