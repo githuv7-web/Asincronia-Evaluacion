@@ -1,22 +1,94 @@
-# Documentación del Proceso: Desarrollo de la Guía
+# 📡 Documentacion de Asincronia — JSONPlaceholder API
 
-En este apartado documento mi proceso paso a paso desarrollando la guía. A continuación, el registro detallado de las actividades realizadas:
+ **Tecnología en Análisis y Desarrollo de Software**   
+Implementa cinco funcionalidades que consumen la API pública [JSONPlaceholder](https://jsonplaceholder.typicode.com/) usando **JavaScript con Node.js**, asincronía con `async/await` y arquitectura modular.
 
-1. **Creación del repositorio:** Inicié creando el repositorio remoto en GitHub para alojar el proyecto.
-2. **Enlace del entorno local:** Vinculé el repositorio con mi entorno local a través de la terminal de Git Bash.
-3. **Gestión de ramas base:** Creé y me posicioné en la rama principal (`main`) para llevar el control de versiones inicial.
-4. **Estructura base de archivos:** Agregué los archivos principales que conforman la arquitectura del proyecto, los cuales incluyen:
-   - El archivo de barril (`index.js`) para centralizar las exportaciones.
-   - La carpeta `modules/` con los archivos de cada punto (`Punto1.js` a `Punto5.js`).
-   - El punto de entrada principal (`app.js`).
-5. **Creación de la rama de desarrollo:** Creé la rama `develop` para centralizar la integración de las nuevas funcionalidades.
-6. **Inicio de características (Features):** A partir de `develop`, creé la rama `feature/menu-interactivo` para trabajar de forma aislada y agregar el menú interactivo.
-7. **Documentación del proyecto:** Añadí el archivo `README.md` para establecer la presentación y las instrucciones generales del repositorio.
-8. **Integración del menú:** Realicé la fusión (`merge`) de la rama `feature/menu-interactivo` hacia la rama `develop` y subí los cambios actualizados al repositorio remoto en GitHub (`git push`).
-9. **Sincronización del entorno local:** Sincronicé la rama `develop` en mi máquina local para asegurarme de contar con la versión más reciente del código antes de continuar.
-10. **Creación de la rama para el Punto 1:** A partir de `develop`, creé y me posicioné en una nueva rama llamada `feature/punto1-tareas` para dar solución al primer requerimiento de la guía.
-11. **Desarrollo del Punto 1 (Agrupación de tareas):** Implementé la lógica en `Punto1.js` utilizando `fetch` para obtener las tareas de la API. Filtré aquellas cuya propiedad `completed` estuviera en `false` y realicé una agrupación por ID de usuario (`userId`) para mostrar las tareas pendientes correspondientes a cada uno.
-12. **Fusión y publicación del Punto 1:** Uní nuevamente la rama `feature/punto1-tareas` hacia `develop` mediante un `merge` y subí los cambios finales al repositorio remoto.
-13. **Creación de la rama para el Punto 2:** A partir de `develop`, creé una nueva rama llamada `feat/punto2` para aislar el entorno de trabajo del segundo requerimiento.
-14. **Resolución y publicación del Punto 2:** Resolví la lógica correspondiente al segundo punto de la guía. Al finalizar y verificar su funcionamiento, realicé la fusión (`merge`) de esta rama hacia `develop` y subí los cambios al repositorio remoto.
-15. **Actualización de archivos pendientes (14/09/2026):** El día de hoy recuperé algunos archivos que no se habían subido correctamente en su momento, incluyendo este documento Markdown (`.md`), y procedí a subirlos asegurándome de actualizar tanto la rama `main` como `develop`.
+---
+
+## 📋 Información General
+
+| Campo | Detalle |
+|---|---|
+| **Programa** | Técnico en Programación de Software |
+| **Ficha** | 3234206 |
+| **Instructor** | John Freddy Becerra Castellanos |
+| **Fecha de entrega** | 15-08-2026 |
+| **API utilizada** | https://jsonplaceholder.typicode.com/ |
+
+---
+
+## 🚀 Funcionalidades
+
+| # | Funcionalidad | Estado |
+|---|---|---|
+| 1 | Listar tareas pendientes por usuario | ✅ |
+| 2 | Buscar usuario, álbumes y fotografías por username | ✅ |
+| 3 | Filtrar posts por nombre y agregar comentarios | ✅  |
+| 4 | Consultar usuarios (nombre y teléfono) | ✅  |
+| 5 | Consultar todos los datos anidados en una sola petición | ✅ |
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
+Asincronia-Evaluacion/
+├── modules/
+│   ├── Punto1.js       # Tareas pendientes por usuario
+│   ├── Punto2.js       # Búsqueda por username con álbumes y fotos
+│   ├── Punto3.js       # Filtrar posts con comentarios
+│   ├── Punto4.js       # Usuarios con nombre y teléfono
+│   └── Punto5.js       # Datos anidados completos
+├── app.js              # Punto de entrada — menú interactivo
+├── index.js            # Archivo barril — exporta todos los módulos
+├── bitacora.md         # Registro del proceso de desarrollo paso a paso
+├── package.json
+└── README.md
+```
+
+### Rol de cada archivo
+
+- **`index.js`** — Archivo barril: centraliza y re-exporta todas las funciones de los módulos. Es el único archivo que importa `app.js`.
+- **`app.js`** — Punto de entrada principal. Muestra el menú interactivo, recibe la opción del usuario y delega la ejecución al módulo correspondiente.
+- **`modules/PuntoN.js`** — Cada archivo contiene una única función exportada que encapsula su caso de uso específico.
+- **`bitacora.md`** — Registro cronológico del proceso de desarrollo: creación del repositorio, gestión de ramas, implementación de cada punto y sincronización con el repositorio remoto.
+
+---
+
+## ⚙️ Requisitos Previos
+
+- [Node.js](https://nodejs.org/) v18 o superior (requerido para `fetch` nativo y `readline/promises`)
+- npm (incluido con Node.js)
+- Conexión a internet (para consumir la API)
+
+Verifica tu versión de Node:
+```bash
+node -v
+```
+
+---
+
+## 📦 Instalación
+
+```bash
+# 1. Clona el repositorio
+git clone https://github.com/TU_USUARIO/Asincronia-Evaluacion.git
+
+# 2. Entra a la carpeta del proyecto
+cd Asincronia-Evaluacion
+
+# 3. Instala las dependencias
+npm install
+```
+
+---
+
+## ▶️ Uso
+
+```bash
+node app.js
+```
+
+Al ejecutar, verás el siguiente menú interactivo:
+
+```
