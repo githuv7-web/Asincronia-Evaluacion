@@ -10,7 +10,7 @@ import { Punto1, Punto2, Punto3, Punto4, Punto5 } from "./index.js";
 const rl = readline.createInterface({ input, output });
 let salir = false;
 
-// Usamos un ciclo while para que cuando escoja 0
+// Usamos un ciclo while para que cuando escoja 0 salga
 while(!salir){
     console.log("\n" + "=".repeat(50));
     console.log("         EVALUACION DE ASINCRONIA BIENVENIDO :)              ");
@@ -45,7 +45,7 @@ while(!salir){
 
         case '4':
             console.log("\n--- Ejecutando Punto 4 ---");
-            // await Punto4();
+            await Punto4();
             break;
 
         case '5':
@@ -56,7 +56,7 @@ while(!salir){
         case '0':
             console.log("\nSaliendo del programa. ¡Hasta luego!");
             salir = true; // Lo ponemos como True para que se salga del while 
-            rl.close(); // Buena práctica: cerrar la interfaz de readline al salir
+            rl.close(); 
             break;
 
         default:
