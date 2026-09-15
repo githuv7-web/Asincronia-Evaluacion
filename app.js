@@ -50,7 +50,7 @@ while(!salir){
 
         case '5':
             console.log("\n--- Ejecutando Punto 5 ---");
-            // await Punto5();
+             await Punto5();
             break;
 
         case '0':
