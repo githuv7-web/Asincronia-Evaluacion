@@ -25,7 +25,7 @@ Implementa cinco funcionalidades que consumen la API pública [JSONPlaceholder](
 | 2 | Buscar usuario, álbumes y fotografías por username | ✅ |
 | 3 | Filtrar posts por nombre y agregar comentarios | ✅  |
 | 4 | Consultar usuarios (nombre y teléfono) | ✅  |
-| 5 | Consultar todos los datos anidados en una sola petición | 🚧 En desarrollo |
+| 5 | Consultar todos los datos anidados en una sola petición | ✅ |
 
 ---
 
