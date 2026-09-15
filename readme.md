@@ -89,6 +89,13 @@ npm install
 node app.js
 ```
 
-Al ejecutar, verás el siguiente menú interactivo:
+Al ejecutar, verás el siguiente menú interactivo escoje el ejercicio de tu preferencia:
+
+    ("1. Listar tareas pendientes por usuario");
+    ("2. Buscar usuario, álbumes y fotografías");
+    ("3. Filtrar posts por nombre y agregar comentarios");
+    ("4. Consultar usuarios (modificar respuesta: nombre y teléfono)");
+    ("5. Consultar todos los datos anidados en una sola petición");
+    ("0. Salir del programa");
 
 ```
