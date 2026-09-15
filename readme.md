@@ -23,8 +23,8 @@ Implementa cinco funcionalidades que consumen la API pública [JSONPlaceholder](
 |---|---|---|
 | 1 | Listar tareas pendientes por usuario | ✅ |
 | 2 | Buscar usuario, álbumes y fotografías por username | ✅ |
-| 3 | Filtrar posts por nombre y agregar comentarios | 🚧 En desarrollo |
-| 4 | Consultar usuarios (nombre y teléfono) | 🚧 En desarrollo |
+| 3 | Filtrar posts por nombre y agregar comentarios | ✅  |
+| 4 | Consultar usuarios (nombre y teléfono) | ✅  |
 | 5 | Consultar todos los datos anidados en una sola petición | 🚧 En desarrollo |
 
 ---
@@ -177,7 +177,4 @@ refactor: mejora estructura del módulo Punto5
 
 ---
 
-## 📄 Licencia
 
-Proyecto académico — SENA Centro Industrial de Mantenimiento Integral (CIMI).  
-Uso educativo únicamente.
