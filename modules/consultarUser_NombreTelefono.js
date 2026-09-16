@@ -1,5 +1,5 @@
 // modules/Punto4.js
-export const Punto4 = async () => {
+export const consultarUser_NombreTelefono = async () => {
     try {
         // Realizamos la petición a la API para obtener los usuarios
         const usersRes = await fetch('https://jsonplaceholder.typicode.com/users');

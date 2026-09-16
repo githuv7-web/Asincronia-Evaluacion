@@ -1,4 +1,4 @@
-export const Punto2 = async (rl) => {
+export const agruparDatos_segun_Username = async (rl) => {
     try {
        
         const usernameInput = await rl.question("\nDigita el username del usuario a buscar (ej. Bret, Antonette, Samantha): ");

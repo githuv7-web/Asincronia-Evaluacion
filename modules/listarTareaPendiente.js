@@ -1,4 +1,4 @@
-export const Punto1 = async () => {
+export const listarTareaPendiente = async () => {
     try {
         // Realizamos la petición HTTP a la API pública para obtener las tareas (todos)
         const respuesta = await fetch('https://jsonplaceholder.typicode.com/todos');

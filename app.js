@@ -4,7 +4,7 @@ import * as readline from 'readline/promises';
 import { stdin as input, stdout as output } from 'process'; 
 
 //Aca estoy importando todas las funciones desde el archivo barril
-import { Punto1, Punto2, Punto3, Punto4, Punto5 } from "./index.js";
+import { listarTareaPendiente, agruparDatos_segun_Username, filtrarPostPorNombre, consultarUser_NombreTelefono, solicitarTodosUsuarios } from "./index.js";
 
 // Creamos la interfaz de lectura vinculada a la terminal
 const rl = readline.createInterface({ input, output });
@@ -30,27 +30,27 @@ while(!salir){
         case '1':
             
             console.log("\n--- Ejecutando Punto 1 ---");
-             await Punto1() 
+             await listarTareaPendiente() 
             break;
 
         case '2':
             console.log("\n--- Ejecutando Punto 2 ---");
-            await Punto2(rl);
+            await agruparDatos_segun_Username(rl);
             break;
 
         case '3':
             console.log("\n--- Ejecutando Punto 3 ---");
-            await Punto3(rl);
+            await filtrarPostPorNombre(rl);
             break;
 
         case '4':
             console.log("\n--- Ejecutando Punto 4 ---");
-            await Punto4();
+            await consultarUser_NombreTelefono();
             break;
 
         case '5':
             console.log("\n--- Ejecutando Punto 5 ---");
-             await Punto5();
+             await solicitarTodosUsuarios();
             break;
 
         case '0':

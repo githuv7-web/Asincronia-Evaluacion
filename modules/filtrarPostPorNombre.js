@@ -1,5 +1,5 @@
 // modules/Punto3.js
-export const Punto3 = async (rl) => {
+export const filtrarPostPorNombre = async (rl) => {
     try {
         // Solicitamos por teclado el "nombre" (título o parte de él) del post a buscar
         const titleSearch = await rl.question("\nDigita el título (o parte de él) del post a buscar: ");
