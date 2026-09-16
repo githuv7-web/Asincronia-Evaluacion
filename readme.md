@@ -33,17 +33,20 @@ Implementa cinco funcionalidades que consumen la API pública [JSONPlaceholder](
 
 ```
 Asincronia-Evaluacion/
+├── docs/
+│   ├── arhcivoPruebas.md                 # Documento de evaluación y casos de prueba
+│   └── bitacora.md                       # Registro del proceso de desarrollo paso a paso
 ├── modules/
-│   ├── Punto1.js       # Tareas pendientes por usuario
-│   ├── Punto2.js       # Búsqueda por username con álbumes y fotos
-│   ├── Punto3.js       # Filtrar posts con comentarios
-│   ├── Punto4.js       # Usuarios con nombre y teléfono
-│   └── Punto5.js       # Datos anidados completos
-├── app.js              # Punto de entrada — menú interactivo
-├── index.js            # Archivo barril — exporta todos los módulos
-├── bitacora.md         # Registro del proceso de desarrollo paso a paso
+│   ├── agruparDatos_segun_Username.js    # Búsqueda por username con álbumes y fotos
+│   ├── consultarUser_NombreTelefono.js   # Consulta de usuarios (nombre y teléfono)
+│   ├── explicacionDocumentos.md          # Explicación detallada de variables y funciones
+│   ├── filtrarPostPorNombre.js           # Filtro de posts por título y comentarios
+│   ├── listarTareaPendiente.js           # Agrupación de tareas pendientes por usuario
+│   └── solicitarTodosUsuarios.js         # Consulta masiva de datos anidados
+├── app.js                                # Punto de entrada — menú interactivo
+├── index.js                              # Archivo barril — exporta todos los módulos
 ├── package.json
-└── README.md
+└── readme.md
 ```
 
 ### Rol de cada archivo

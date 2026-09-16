@@ -1,5 +1,5 @@
 // modules/Punto5.js
-export const Punto5 = async () => {
+export const solicitarTodosUsuarios = async () => {
     // Iniciamos un bloque try-catch para el manejo correcto de errores asíncronos.
     try {
         // Imprimimos un mensaje en consola para indicar que inició el proceso de carga de datos.
